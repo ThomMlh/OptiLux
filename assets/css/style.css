@@ -28,6 +28,17 @@ body {
     object-fit: cover;
     width: 100%;
 }
+.jeune {
+    background-color: #F7EC59;
+}
+
+.pink {
+    background-color: #FF66D8;
+}
+
+.bleu {
+    background-color: #92DCE5;
+}
 
 /* Footer */
 *{
@@ -79,18 +90,5 @@ a {
 
 
 
-
-
-.jeune {
-    background-color: #F7EC59;
-}
-
-.pink {
-    background-color: #FF66D8;
-}
-
-.bleu {
-    background-color: #92DCE5;
-}
 
 
