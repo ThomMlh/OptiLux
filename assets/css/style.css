@@ -1,0 +1,10 @@
+/* Pour les noms de class et id, rajoutez la dernière lettre de votre prénom en majuscule à la fin !
+on va éviter un max de conflits css 
+exemple : backgroundC ou backgroundS */
+body {
+    height: 400vh;
+}
+
+
+
+
