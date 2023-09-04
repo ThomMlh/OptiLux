@@ -4,12 +4,12 @@ exemple : backgroundC ou backgroundS */
 body {
 
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+   
     
 }
 /*mosaique et contact daria*/
 
-#container {
+#containerD {
     display: flex;
     flex-direction: column;
 }
@@ -17,6 +17,7 @@ body {
 .mosaique {
    
         display: grid;
+        text-align: center;
         margin: auto;
         width: 1000px;
         /* height: 90vh; */
@@ -41,6 +42,10 @@ body {
 
 .bleu {
     background-color: #92DCE5;
+}
+
+.contact {
+    text-align: center;
 }
 
 
@@ -95,12 +100,11 @@ h2 {
 
 @media screen and (max-width: 600px){
 
-    body {
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-    }
+ 
     div {float:none; width: 100% !important;}
 }
+
+
 
 /*mosaique et contact daria FIN*/
 
