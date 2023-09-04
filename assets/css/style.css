@@ -2,9 +2,57 @@
 on va éviter un max de conflits css 
 exemple : backgroundC ou backgroundS */
 body {
-    height: 400vh;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Footer */
+*{
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+  }
+  a:hover {
+    color: #ffffffa2;
+  }
+.backgroundFooter{
+    background-color: #2B2D42; 
+    display: flex;
+    height: 150px; 
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.elementFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 40%;
+    margin-left: 40px;
+}
+
+.elementT1{
+    border-right: 2px solid #ffffff94;
+    padding-right: 30px;
+}
+.elementT2{
+    border-right: 2px solid #ffffff94;
+    padding-right: 30px;
+}
+.elementT3{
+    border-right: 2px solid #ffffff94;
+    padding-right: 30px;
+}
+.logoFooter img{
+    height: 250px; 
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+
+
 
 
 
