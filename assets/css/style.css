@@ -3,6 +3,7 @@ on va éviter un max de conflits css
 exemple : backgroundC ou backgroundS */
 body {
     height: 400vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 
