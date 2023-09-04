@@ -18,7 +18,7 @@ body {
    
         display: grid;
         margin: auto;
-        width: 900px;
+        width: 1000px;
         /* height: 90vh; */
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -93,5 +93,19 @@ h2 {
  
 }
 
+@media screen and (max-width: 600px){
 
+    body {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    div {float:none; width: 100% !important;}
+
+  
+
+   
+
+
+    
+}
 
