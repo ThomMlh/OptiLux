@@ -2,10 +2,30 @@
 on va éviter un max de conflits css 
 exemple : backgroundC ou backgroundS */
 body {
-    height: 400vh;
-    font-family: 'Roboto', sans-serif;
-}
 
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+/*mosaique et contact daria*/
+
+.mosaique {
+   
+        display: grid;
+        width: 1000px;
+        height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+     
+     
+}
+.mosaique img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
 
 
 
