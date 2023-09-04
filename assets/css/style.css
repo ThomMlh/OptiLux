@@ -4,21 +4,22 @@ exemple : backgroundC ou backgroundS */
 body {
 
     font-family: 'Roboto', sans-serif;
-    align-items: center;
-    align-content: center;
     text-align: center;
-
+    
 }
 /*mosaique et contact daria*/
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
 
 .mosaique {
    
         display: grid;
-        position: absolute;
-        inset: 0;
         margin: auto;
         width: 900px;
-        height: 90vh;
+        /* height: 90vh; */
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
      
@@ -29,9 +30,6 @@ body {
     object-fit: cover;
     width: 100%;
 }
-
-
-
 
 .jeune {
     background-color: #F7EC59;
@@ -44,5 +42,56 @@ body {
 .bleu {
     background-color: #92DCE5;
 }
+
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:#2B2D42;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #FF66D8;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #FF66D8; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+
+  border-radius:5px;
+  background-color: #92DCE5;
+  border:2px solid #FF66D8;
+  cursor:pointer;
+  color:#2B2D42;
+  font-size:24px;
+  padding-top:5px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#F7EC59; }
+
+h2 {
+ padding-top: 5%;
+ color: #2B2D42;
+ font-size:24px;
+ 
+}
+
 
 
