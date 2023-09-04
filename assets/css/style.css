@@ -14,8 +14,11 @@ body {
 .mosaique {
    
         display: grid;
-        width: 1000px;
-        height: 100vh;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 900px;
+        height: 90vh;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
      
@@ -23,9 +26,23 @@ body {
 }
 .mosaique img {
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
 }
 
+
+
+
+.jeune {
+    background-color: #F7EC59;
+}
+
+.pink {
+    background-color: #FF66D8;
+}
+
+.bleu {
+    background-color: #92DCE5;
+}
 
 
