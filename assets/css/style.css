@@ -19,8 +19,7 @@ body {
         display: grid;
         text-align: center;
         margin: auto;
-        width: 1000px;
-        /* height: 90vh; */
+        width: 100%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
      
@@ -97,6 +96,13 @@ h2 {
  font-size:24px;
  
 }
+
+.overlay {padding: 10px;position: absolute;transition: all 0.5s ease-in-out;}
+.overlay img {width: 12px;}
+img h2 {overflow: auto;}
+img:hover .overlay {margin-top: 10%;}
+img:hover {transform: scale(1.1) rotate(0);transform-origin: bottom left; z-index: 2;box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);}
+
 
 @media screen and (max-width: 600px){
 
