@@ -32,6 +32,7 @@ body {
     width: 100%;
     transition: all 250ms ease-in-out;
 }
+
 .jeune {
     background-color: #F7EC59;
 }
@@ -43,6 +44,13 @@ body {
 .bleu {
     background-color: #92DCE5;
 }
+
+.overlay {padding: 10px;position: absolute;transition: all 0.5s ease-in-out;}
+.overlay img {width: 12px;}
+img h2 {overflow: auto;}
+img:hover .overlay {margin-top: 10%;}
+img:hover {transform: scale(1.1) rotate(0);transform-origin: bottom left; z-index: 2;box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);}
+
 
 /* Footer */
 *{
