@@ -3,21 +3,24 @@ on va éviter un max de conflits css
 exemple : backgroundC ou backgroundS */
 body {
     font-family: 'Roboto', sans-serif;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-
+   
+    
 }
 /*mosaique et contact daria*/
+
+/* MOSAIQUE */
+
+#containerD {
+    display: flex;
+    flex-direction: column;
+}
 
 .mosaique {
    
         display: grid;
-        position: absolute;
-        inset: 0;
+        text-align: center;
         margin: auto;
-        width: 900px;
-        height: 90vh;
+        width: 100%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
      
@@ -27,6 +30,7 @@ body {
     height: 100%;
     object-fit: cover;
     width: 100%;
+    transition: all 250ms ease-in-out;
 }
 .jeune {
     background-color: #F7EC59;
