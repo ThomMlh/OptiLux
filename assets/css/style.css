@@ -9,6 +9,8 @@ body {
 }
 /*mosaique et contact daria*/
 
+/* MOSAIQUE */
+
 #containerD {
     display: flex;
     flex-direction: column;
@@ -43,6 +45,17 @@ body {
 .bleu {
     background-color: #92DCE5;
 }
+
+.overlay {padding: 10px;position: absolute;transition: all 0.5s ease-in-out;}
+.overlay img {width: 12px;}
+img h2 {overflow: auto;}
+img:hover .overlay {margin-top: 10%;}
+img:hover {transform: scale(1.1) rotate(0);transform-origin: bottom left; z-index: 2;box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);}
+
+/* MOSAIQUE fin */
+
+
+/* CONTACT */
 
 .contact {
     text-align: center;
@@ -98,12 +111,9 @@ h2 {
  
 }
 
-.overlay {padding: 10px;position: absolute;transition: all 0.5s ease-in-out;}
-.overlay img {width: 12px;}
-img h2 {overflow: auto;}
-img:hover .overlay {margin-top: 10%;}
-img:hover {transform: scale(1.1) rotate(0);transform-origin: bottom left; z-index: 2;box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);}
-
+/* fin de CONTACT */
+ 
+/* PORTABLE */
 
 @media screen and (max-width: 600px){
 
