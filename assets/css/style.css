@@ -6,8 +6,6 @@ body {
    
     
 }
-/*mosaique et contact daria*/
-
 /* MOSAIQUE */
 
 #containerD {
@@ -106,9 +104,6 @@ h2 {
  font-size:24px;
  
 }
-
-/* fin de CONTACT */
-
 /* Footer */
 *{
     margin: 0px;
@@ -158,6 +153,13 @@ a {
     transform: none;
 }
 
+/* PORTABLE */
+
+@media screen and (max-width: 600px){
+
+ 
+    div {float:none; width: 100% !important;}
+}
 
 
 
