@@ -154,6 +154,9 @@ a {
     width: 250px;
     padding-bottom: 20px;
 }
+.logoFooter img:hover {
+    transform: none;
+}
 
 
 
