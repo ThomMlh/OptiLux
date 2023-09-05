@@ -1,10 +1,9 @@
 /* Pour les noms de class et id, rajoutez la dernière lettre de votre prénom en majuscule à la fin !
 on va éviter un max de conflits css 
 exemple : backgroundC ou backgroundS */
+
 body {
     font-family: 'Roboto', sans-serif;
-   
-    
 }
 #backgroundheader { 
     background-color: #2B2D42 ; 
@@ -36,6 +35,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .nav-links a {
@@ -57,14 +57,17 @@ a:hover {
     height: 50px;
     padding-bottom: 2rem; 
     padding-left: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 #logoS img {
-    height: 70px;
-    width: 300px;
+    height: 80px;
+    width: 350px;
     padding-left: 100px;
 }
 /* hero */
-#hero {display: flex;width: 100%; position: relative; overflow: hidden; height: 700px;}
+#hero {display: flex;width: 100%; position: relative; overflow: hidden; height: 650px;}
 #hero img {width: 1000px;height: 1000px;margin-top: -150px; margin-left: -100px; zoom: 120%;
 }
 #ombreS {width: 500px; height: 1000px; background-color: black; flex-grow: 2; }
@@ -72,7 +75,180 @@ a:hover {
 #hero p {color: white; font-family: Roboto ; font-weight: bold; font-size: 40px;   position: absolute; top: 20%; left: 58%; text-align: center;}
 #produitS {background-color: #92DCE5; position: absolute; top: 50%; left: 75%; border: none; border-radius: 20px; width: 180px; height: 60px; font-size: 20px; font-weight: bold; transition: all 250ms ease-in-out; display: flex; justify-content: center; align-items: center;}
 #produitS:hover {transform: scale(1.1);color: #F8F7F9;}
-#defilS { background-color: none;    width:20%; height: 20%; position: absolute; align-self: self-end; zoom: 10%;top: 90%;right: 35%; }
+#defilS { background-color: none;    width:20%; height: 20%; position: absolute; align-self: self-end;top: 62%;right: 40%; }
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+   }
+  
+  
+  .mouse_scroll {
+      display: block;
+      margin: 0 auto;
+      width: 24px;
+      height: 100px;
+      margin-top: 125px;
+  }
+  
+  
+  .m_scroll_arrows
+  {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+     
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 0 0 3px 4px;
+    
+    width: 16px;
+    height: 16px;
+  }
+  
+  
+  .unu
+  {
+    margin-top: 1px;
+  }
+  
+  .unu, .doi, .trei
+  {
+      -webkit-animation: mouse-scroll 1s infinite;
+      -moz-animation: mouse-scroll 1s infinite;
+      animation: mouse-scroll 1s infinite;
+    
+  }
+  
+  .unu
+  {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+    
+    animation-direction: alternate;
+    animation-delay: alternate;
+  }
+  
+  .doi
+  {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+    
+    animation-delay: .2s;
+    animation-direction: alternate;
+    
+    margin-top: -6px;
+  }
+  
+  .trei
+  {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+    
+    animation-delay: .3s;
+    animation-direction: alternate;
+    
+    
+    margin-top: -6px;
+  }
+  
+  .mouse {
+    height: 42px;
+    width: 24px;
+    border-radius: 14px;
+    transform: none;
+    border: 2px solid white;
+    top: 170px;
+  }
+  
+  .wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+    
+    height: 4px;
+    width: 4px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+  }
+  
+  .wheel {
+    -webkit-animation: mouse-wheel 0.6s linear infinite;
+    -moz-animation: mouse-wheel 0.6s linear infinite;
+    animation: mouse-wheel 0.6s linear infinite;
+  }
+  
+  @-webkit-keyframes mouse-wheel{
+     0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-moz-keyframes mouse-wheel {
+    0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @-o-keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  
+  @-webkit-keyframes mouse-scroll {
+  
+    0%   { opacity: 0;}
+    50%  { opacity: .5;}
+    100% { opacity: 1;}
+  }
+  @-moz-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  
 button {
     outline: none;
     cursor: pointer;
