@@ -1,57 +1,131 @@
-
-
+/* Définition de la police de caractères pour le corps de la page */
 body {
     font-family: 'Roboto', sans-serif;
-   }
-
-.kcontainer {
-    display: flex;
-    align-items: flex-start; /* Aligne les éléments en haut */
-    position: relative; 
-    align-items: center;
-    }
-
-.ktextbloc {
-    position: absolute; /* Position absolue pour le texte */
-    top: 0; /
-    right: 0; 
-    padding: 20px;
-    max-width: 600px; /* Limitez la largeur du texte à 600px (
-    text-align: left; /* Aligne texte à gauche */
 }
 
-
-
-
+/* Style pour la photo */
 .kphoto {
-    position: relative; /* Position absolue pour l'image */
-    margin-right: 90px; /* Ajout de la marge à droite de la photo */
-    width: 150px; /* Ajustez la largeur de la photo */
-    height: auto; /* Ajustez la hauteur de la photo proportionnellement */
-   margin-left: 62px;
+    display: flex;
+    width: 200px; /* Ajuste la largeur de la photo */
+    height: auto; /* Ajustez la hauteur de la photo de manière proportionnelle */
+    margin-left: 120px; /* Marge à gauche de la photo */
+    top: 20px; /* Position verticale par rapport au haut de la page */
 }
 
+/* Style pour le bloc de texte */
+.ktextbloc {
+    display: flex;
+    padding: 20px;
+    max-width: 550px; /* Largeur maximale du texte */
+    text-align: justify; /* Justifie le texte à droite et à gauche */
+    font-size: 20px;
+    line-height: 1.5; /* Augmente l'espace entre les lignes */
+    margin-top: -350px; /* Centre le texte horizontalement */
+    float: right;
+    position: absolute;
+    margin-left: 720px;
+   
 
+    
+}
 
+/* Style pour la mise en page horizontale du texte */
+.line {
+    display: flex; /* Utilise Flexbox pour la mise en page horizontale */
+    align-items: center; /* Centre verticalement le contenu par rapport à la photo */
+    max-width: 600px; /* Largeur maximale du texte */
+    margin: 0 auto; /* Centre le texte horizontalement */
+    padding: 10px; /* Ajoute un espacement intérieur aux paragraphes */
+    text-align: left; /* Aligner le texte à gauche horizontalement */
+    line-height: 1.5; /* Augmente l'espace entre les lignes */
+}
+
+/* Style pour l'effet de déplacement vers le haut du bloc de texte */
+.ktextbloc.move-up {
+    transform: translateY(-50%); /* Ajuste la valeur selon votre préférence */
+}
+
+/* Style pour la grille principale */
 .kgridcontainer {
+    /* Utilise un affichage en grille avec trois colonnes égales */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 40px;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes de largeur égale */
+    padding: 40px; /* Ajoute de l'espace autour de la grille */
+    justify-content: left;
+    position: relative;
+   
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 100px;
+    
 }
 
-.grid-item {
-    background-color: #f2f2f2;
+/* Style pour les cases kcase1 à kcase6 */
+.kcase1, .kcase2, .kcase3, .kcase4, .kcase5, .kcase6 {
     padding: 50px;
-    text-align: center;
-    font-size: 16px;
     border-radius: 20px;
+    top: 50px; /* Position verticale par rapport au haut de la page */
     margin: 20px;
+    max-width: 100%; /* Ajuste la largeur de l'image pour qu'elle ne dépasse pas la grille */
+    max-height: 100%; /* Ajuste la hauteur de l'image pour qu'elle ne dépasse pas la grille */
+    display: flex; /* affichage flex pour centrer l'image */
+    justify-content: center; /* Centre horizontalement l'image */
+    align-items: center; /* Centre verticalement l'image */
+    overflow: hidden; /* Cache tout contenu dépassant les limites de la grille */
+    transition: transform 0.3s ease-in-out; /* Ajoute une transition pour l'effet de zoom */
 }
 
-.kpresentation {
-position: relative;
-margin-left: 130px;
+/* Style pour les cases au survol */
+.kcase1:hover, .kcase2:hover, .kcase3:hover, .kcase4:hover, .kcase5:hover, .kcase6:hover {
+    transform: scale(1.1); /* Ajustez la valeur pour l'effet de zoom au survol */
+}
+
+/* Couleurs pour les différentes cases */
+.kcase1 {
+    background-color: #2B2D42;
+}
+
+.kcase2 {
+    background-color: #f9f6f6;
+}
+
+.kcase3 {
+    background-color: #92DCE5;
+}
+
+.kcase4 {
+    background-color: #f7ec59;
+}
+
+.kcase5 {
+    background-color: #f9f6f6;
+}
+
+.kcase6 {
+    background-color: #fF66D8;
+}
+
+/* Styles pour les textes ktext1 à ktext6 */
+.ktext1, .ktext2, .ktext3, .ktext4, .ktext5, .ktext6 {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    grid-row: 2;
+}
+
+/* Style pour le conteneur de texte */
+.ktextcontainer {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
-    }
+
+.kcase1 .ktext1::before {
+    content: "\f005\f005\f005\f005\f006"; /* Utilisez les codes Unicode de Font Awesome pour les étoiles pleines et vides */
+    font-family: 'Font Awesome 6 Free'; /* Nom de la police d'icônes */
+    font-size: 20px; /* Ajustez la taille des étoiles */
+    color: #FFD700; /* Couleur des étoiles (jaune) */
+    margin-right: 5px; /* Espacement entre les étoiles et le texte */
+}

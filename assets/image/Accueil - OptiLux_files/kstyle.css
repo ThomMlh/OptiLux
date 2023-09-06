@@ -1,0 +1,99 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+   }
+
+   .kcontainer {
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments du conteneur */
+    position: relative; 
+}
+
+
+.kphoto {
+    position: fixed; /* Position absolue pour la photo */
+    width: 200px; /* Ajustez la largeur de la photo */
+    height: auto; /* Ajustez la hauteur de la photo de manière proportionnelle */
+margin-left: 120px;
+top: 20px;
+}
+
+.ktextbloc {
+   
+    padding: 20px;
+    max-width: 600px; /* Limite la largeur du texte à 600px (ajustez selon vos besoins) */
+    position: fixed;
+    text-align:left; /* Aligne le texte à droite */
+    top:110px;
+    text-justify:auto;
+    font-size: 20px;
+    right: 50px;
+    text-align: justify; /* Justifie le texte à droite et à gauche */
+    line-height: 1.5; /* Augmentez l'espace entre les lignes (ajustez la valeur selon vos besoins) */
+}
+
+
+
+
+.kgridcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 40px;
+    justify-content: left; /* Aligner la grille à gauche */
+    position: relative;
+    top: 400px;
+ justify-content: left; /* Aligner la grille à gauche */
+ margin-left: 60px;
+ margin-right: 60px;
+ height: 100px;
+}
+
+.kcase1 {
+    background-color: #2B2D42;
+    padding:55px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.kcase2 {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.kcase3 {
+    background-color: #92DCE5;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+   
+}
+.kcase4 {
+    background-color: #f7ec59;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.kcase5 {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.kcase6 {
+    background-color: #fF66D8;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.kpresentation {
+    max-width: 600px; /* Limitez la largeur du texte à 600px */
+    max-height: 200px;
+    align-items: 0; /* Alignez verticalement le texte au centre */
+    margin-left: 700px;
+    top: 100px;
+
+    }
+
