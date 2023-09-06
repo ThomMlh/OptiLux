@@ -68,10 +68,9 @@ a:hover {
 }
 /* hero */
 #hero {display: flex;width: 100%; position: relative; overflow: hidden; height: 650px;}
-#hero img {width: 1000px;height: 1000px;margin-top: -150px; margin-left: -100px; zoom: 120%;
+#hero img {width: 1000px;height: 1000px;margin-top: -150px; margin-left: -100px; zoom: 120%; 
 }
 #ombreS {width: 500px; height: 1000px; background-color: black; flex-grow: 2; }
-
 #hero p {color: white; font-family: Roboto ; font-weight: bold; font-size: 40px;   position: absolute; top: 20%; left: 58%; text-align: center;}
 #produitS {background-color: #92DCE5; position: absolute; top: 50%; left: 75%; border: none; border-radius: 20px; width: 180px; height: 60px; font-size: 20px; font-weight: bold; transition: all 250ms ease-in-out; display: flex; justify-content: center; align-items: center;}
 #produitS:hover {transform: scale(1.1);color: #F8F7F9;}
