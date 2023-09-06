@@ -327,13 +327,13 @@ button {
         display: grid;
         text-align: center;
         margin: auto;
-        width: 70%;
+        width: 100%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
         margin-top: 80px;
+      
 }
 
-     
      
 
 .mosaique img {
@@ -358,8 +358,8 @@ button {
 .overlay {padding: 10px;position: absolute;transition: all 0.5s ease-in-out;}
 .overlay img {width: 12px;}
 img h2 {overflow: auto;}
-/*img:hover .overlay {margin-top: 10%;}
-.mosaique img:hover {transform: scale(1.02) rotate(0);transform-origin: bottom left; z-index: 2;box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);}*/
+img:hover .overlay {margin-top: 10%;}
+.mosaique img:hover {transform: scale(1.02) rotate(0);transform-origin: bottom left; z-index: 2;box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);}
 
 /* CONTACT */
 
@@ -618,8 +618,8 @@ a {
     #ombreS {display: none;}
     #hero {flex-direction: column; background-color: black; justify-content: center; align-items: center; display: flex;}
     #hero img { height: 400px; width: 400px; zoom: 120%;margin-top: 50px; margin-right: 50px; opacity: 70%;}
-    #hero p {font-size: 20px;top: 15%; z-index: 2}
-    #produitS {width: 170px; height: 40px; font-size: 12px;left: 60%;top: 30%;}
+    #hero p {font-size: 15px;top: 25%; z-index: 2; left: 40%;}
+    #produitS {width: 170px; height: 40px; font-size: 12px;left: 50%;top: 30%;}
     .logoFooter img{
       height: 150px; 
       width: 150px;
