@@ -311,9 +311,10 @@ button {
         display: grid;
         text-align: center;
         margin: auto;
-        width: 60%;
+        width: 70%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        margin-top: 80px;
      
      
 }
@@ -456,6 +457,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  
 }
 .presentation { 
   display: flex;
@@ -463,6 +466,7 @@ a {
   align-items: center;
   margin-top: 80px;
   width: 60%;
+  margin-bottom: 70px;
 }
 .imgpresent img {
   height: 250px;
@@ -472,40 +476,120 @@ a {
 .textpresent {
   padding: 50px;
 }
+
+.blue {color: #27C5CF;}
+.cafonctionnepas {color: #FF66D8;}
 .servic {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  text-align: center;
 }
 .servic div {
   height: 200px;
   width: 400px;
-}
-.servic1 {
-  background-color: #2B2D42;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servic1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 .servic1 img { 
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 230px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 25px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: all 250ms ease-in-out;
 }
 .servic2 {
-  background-color: #92DCE5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servic2 img { 
+  height: 120px;
+  width: 210px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: all 250ms ease-in-out;
 }
 .servic3 {
-  background-color: #FF66D8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servic3 img { 
+  height: 100px;
+  width: 230px;
+  background-color: #27C5CF;
+  border-radius: 25px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: all 250ms ease-in-out;
 }
 .servic4 {
-  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servic4 img { 
+  height: 100px;
+  width: 230px;
+  background-color: #F7EC59;
+  border-radius: 25px;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 250ms ease-in-out;
 }
 .servic5 {
-  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servic5 img { 
+  height: 100px;
+  width: 210px;
+  border-radius: 25px;
+  transition: all 250ms ease-in-out;
+  
 }
 .servic6 {
-  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.servic6 img { 
+  height: 100px;
+  width: 210px;
+  background-color: #FF66D8;
+  border-radius: 25px;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: all 250ms ease-in-out;
+}
+.servic6:hover img, .servic1:hover img, .servic2:hover img, .servic3:hover img, .servic4:hover img, .servic5:hover img { transform: scale(1.1);}
 
 /* PORTABLE */
 
