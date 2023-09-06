@@ -442,8 +442,8 @@ a {
     padding-right: 30px;
 }
 .logoFooter img{
-    height: 250px; 
-    width: 250px;
+    height: 140px; 
+    width: 150px;
     padding-bottom: 20px;
 }
 .logoFooter img:hover {
@@ -519,7 +519,7 @@ a {
   justify-content: center;
 }
 .servic2 img { 
-  height: 120px;
+  height: 110px;
   width: 210px;
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
@@ -627,7 +627,10 @@ a:hover {
   text-underline-offset: 1rem;
   text-decoration-color: #92DCE5;
 }
+.presentation { flex-direction: column;}
+.textpresent { padding: 5px; padding-top: 30px;}
 }
+
 
 
 
