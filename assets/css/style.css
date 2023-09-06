@@ -67,7 +67,7 @@ a:hover {
     padding-left: 100px;
 }
 /* hero */
-#hero {display: flex;width: 100%; position: relative; overflow: hidden; height: 650px;}
+#hero {display: flex;width: 100%; position: relative; overflow: hidden; height: 650px; filter: brightness(85%);}
 #hero img {width: 1000px;height: 1000px;margin-top: -150px; margin-left: -100px; zoom: 120%; 
 }
 #ombreS {width: 500px; height: 1000px; background-color: black; flex-grow: 2; }
@@ -454,7 +454,12 @@ a {
 @media screen and (max-width: 600px){
 
  
-    div {float:none; width: 100% !important;}
+    .mosaique {float:none; width: 100% !important;}
+    #ombreS {display: none;}
+    #hero {flex-direction: column; background-color: black; justify-content: center; align-items: center; display: flex;}
+    #hero img { height: 400px; width: 400px; zoom: 120%;margin-top: 50px; margin-right: 50px; opacity: 70%;}
+    #hero p {font-size: 20px;top: 15%; z-index: 2}
+    #produitS {width: 170px; height: 40px; font-size: 12px;left: 60%;top: 30%;}
 }
 
 
