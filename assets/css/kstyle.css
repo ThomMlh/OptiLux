@@ -29,16 +29,7 @@ body {
     
 }
 
-/* Style pour la mise en page horizontale du texte */
-.line {
-    display: flex; /* Utilise Flexbox pour la mise en page horizontale */
-    align-items: center; /* Centre verticalement le contenu par rapport à la photo */
-    max-width: 600px; /* Largeur maximale du texte */
-    margin: 0 auto; /* Centre le texte horizontalement */
-    padding: 10px; /* Ajoute un espacement intérieur aux paragraphes */
-    text-align: left; /* Aligner le texte à gauche horizontalement */
-    line-height: 1.5; /* Augmente l'espace entre les lignes */
-}
+
 
 /* Style pour l'effet de déplacement vers le haut du bloc de texte */
 .ktextbloc.move-up {
@@ -50,9 +41,10 @@ body {
     /* Utilise un affichage en grille avec trois colonnes égales */
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Trois colonnes de largeur égale */
+    grid-row: 4;
     padding: 40px; /* Ajoute de l'espace autour de la grille */
     justify-content: left;
-    position: relative;
+    
    
     margin-left: 60px;
     margin-right: 60px;
@@ -119,13 +111,10 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-
-
-
-.kcase1 .ktext1::before {
-    content: "\f005\f005\f005\f005\f006"; /* Utilisez les codes Unicode de Font Awesome pour les étoiles pleines et vides */
-    font-family: 'Font Awesome 6 Free'; /* Nom de la police d'icônes */
-    font-size: 20px; /* Ajustez la taille des étoiles */
-    color: #FFD700; /* Couleur des étoiles (jaune) */
-    margin-right: 5px; /* Espacement entre les étoiles et le texte */
-}
+.containerservices { background-color: #92DCE5; width: 100%; height: 500px; display: flex; flex-wrap: wrap;}
+.a1 { background-color: #fF66D8; width: 33%; height: 100px;}
+.a2 { background-color: #f7ec59; width: 33%; height: 100px;}
+.a3 { background-color: aquamarine;width: 33%; height: 100px;}
+.a4 { background-color: #2B2D42;width: 33%; height: 100px;}
+.a5 { background-color: beige;width: 33%; height: 100px;}
+.a6 { background-color: chocolate;width: 33%; height: 100px;}
