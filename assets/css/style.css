@@ -6,6 +6,208 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 #backgroundheader { 
+  background-color: #2B2D42 ; 
+  display: flex; 
+  justify-content:flex-start ;
+  align-items: center;
+  overflow: hidden; 
+}
+
+#elementS {
+  width: 100%; 
+  display: flex; 
+  flex-direction: row; 
+  gap: 30px; width:80%; 
+  max-height: 20%;
+}
+
+.header {
+background-color: #2B2D42
+box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+position: relative;
+width: 100%;
+z-index: 3;
+}
+
+.header ul {
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+}
+
+.header li a {
+display: block;
+color: #2B2D42;
+padding: 20px 20px;
+text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+background-color: #2B2D42;
+}
+
+.header .menu {
+clear: both;
+max-height: 0;
+transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+cursor: pointer;
+display: inline-block;
+float: right;
+padding: 28px 20px;
+position: relative;
+user-select: none;
+}
+
+.header .menu-icon .navicon {
+background: #fff;
+display: block;
+height: 2px;
+position: relative;
+transition: background .2s ease-out;
+width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+background: #fff;
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+top: -5px;
+}
+
+/* menu btn */
+
+.logomenu {
+width: 70%;
+margin: auto;
+margin-left: auto;
+padding-bottom: 2rem;
+}
+
+.menu-wrapper {
+margin-left: 5rem;
+}
+
+.logomenu img {
+width: 50%;
+}
+
+.header .menu-btn {
+display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+max-height: 340px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+top: 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px){
+.header ul{
+    background-color: #fff;
+}  
+.header li a {
+padding: 15px;
+border-bottom: 1px dotted #dddddd;
+
+}
+}
+
+@media only screen and (min-width: 768px) {
+.menu-wrapper{
+    background: #2B2D42;
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+  
+}
+.header li {
+float: left;
+}
+.header .logo{
+    line-height: 1;
+}
+.header li a {
+color: #fff;
+padding: 0px 30px;
+border-right: 1px solid #2B2D42;
+
+}
+.header .menu {
+clear: none;
+float: right;
+max-height: none;
+}
+.header .menu-icon {
+display: none;
+}
+}
+nav, .menu {
+display: flex;
+}
+
+
+/* nav {
+justify-content: space-around;
+align-items: center;
+height: 10vh;
+margin-left: 1rem;
+} */
+
+.menu {
+gap: 2rem;
+list-style: none;
+font-size: 1rem;
+font-weight: bold;
+}
+
+.menu a {
+color: #F8F7F9;
+text-decoration: none;
+text-decoration-color: white;
+}
+
+.menu a:hover {
+color: #92DCE5;
+text-decoration: underline;
+text-underline-offset: 1rem;
+text-decoration-color: #92DCE5;
+}
+/* #backgroundheader { 
     background-color: #000000 ;
     display: flex; 
     justify-content:flex-start ;
@@ -52,7 +254,7 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #92DCE5;
-}
+} */
 
 #logoS { 
    /* ICI */
