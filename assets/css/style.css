@@ -824,8 +824,8 @@ a {
     #ombreS {display: none;}
     #hero {flex-direction: column; background-color: black; justify-content: center; align-items: center; display: flex;}
     #hero img { height: 400px; width: 400px; zoom: 120%;margin-top: 50px; margin-right: 50px; opacity: 70%;}
-    #hero p {font-size: 15px;top: 25%; z-index: 2; left: 40%;}
-    #produitS {width: 170px; height: 40px; font-size: 12px;left: 50%;top: 30%;}
+    #hero p {font-size: 15px;top:15%; z-index: 2; left: 20%;}
+    #produitS {width: 170px; height: 40px; font-size: 12px;left: 30%;top: 25%;}
     .logoFooter img{
       height: 150px; 
       width: 150px;
