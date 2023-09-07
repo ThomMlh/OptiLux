@@ -145,7 +145,6 @@ top: 0;
 .header li a {
 padding: 15px;
 border-bottom: 1px dotted #dddddd;
-
 }
 }
 
@@ -492,7 +491,7 @@ button {
         display: grid;
         text-align: center;
         margin: auto;
-        width: 100%;
+        width: 70%;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
         margin-top: 80px;
